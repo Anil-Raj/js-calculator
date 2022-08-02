@@ -1,0 +1,81 @@
+.btn {
+    width: 80px;
+    height: 40px;
+    background: #3e3e3e;
+    display: inline-block;
+    border-radius: 11px;
+    margin: 2px;
+    color: #e8eaed;
+    font-size: 24px;
+    text-align: center;
+    user-select: none;
+}
+
+#container {
+    width: 695px;
+}
+.inline_block{
+    width: 1258px;
+}
+.wrapper{
+   display: flex;
+   width: 672px;
+}
+.fx_selected .fx{
+    background: #1e1e1e;
+    border-radius: 18px 0px 0px 18px;
+    color: #1499ef;
+}
+.basic_selected .basic{
+    background: #1e1e1e;
+    border-radius: 0px 18px 18px 0px;
+    color: #1499ef;
+}
+.basic, .fx{
+    width: 50px;
+    padding: 7px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+.input_container {
+    width: 95%;
+    border: 1px solid #656565;
+    font-size: 24px;
+    background: #3e3e3e;
+    border-radius: 5px;
+    height: 50px;
+    text-align: right;
+    color: #e8eaed;
+    margin: 5px;
+    position: relative;
+}
+
+@media only screen and (max-width: 750px) {
+    #container {
+        width: 340px;
+    }
+    .scrollable{
+        width: 99%;
+        overflow-y: scroll;
+    }
+    .wrapper{
+        width: 200%;
+    }
+    .basic, .fx{
+        display: inline-block;
+    }
+    .input_container {
+        width: 96%;
+    }
+} 
+
+
+.input_container #input{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
